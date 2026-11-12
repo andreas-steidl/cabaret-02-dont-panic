@@ -3,3 +3,7 @@ __pycache__/
 *.vor-*.html
 Thumbs.db
 *.vor-*.zip
+
+# Druckdateien und hochgerechnete Bilder: nur auf dem NAS und auf Elements, nie nach GitHub
+plakat/druck/
+plakat/*_x2.png
