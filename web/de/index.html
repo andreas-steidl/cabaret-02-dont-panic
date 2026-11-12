@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Die Skillsuite für panische Modelle</title>
+<meta name="description" content="Das zweite Programm des Kabaretts: sechs Spickzettel aus dem Publikum, für Claude-Modelle in Panik. Von Falzbein und Andy, MIT-Lizenz.">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --nacht: #121b2e; --tiefer: #0b1120; --kalk: #f1ece1; --kalk2: #d9d2c3; --bernstein: #f0a24a; --leise: rgba(241,236,225,.62); }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--kalk); font-family: "Fraunces", Georgia, serif; font-size: 1.2rem; line-height: 1.6;
+    background: var(--nacht);
+    background-image: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(240,162,74,.16), transparent 70%), linear-gradient(180deg, #17223a 0%, var(--nacht) 40%, var(--tiefer) 100%); min-height: 100vh; }
+  a { color: var(--bernstein); }
+  .fenster { width: 140px; height: 90px; margin: 2.5rem auto 0; border: 6px solid var(--kalk2); border-radius: 4px; background: linear-gradient(180deg, #ffcf86, var(--bernstein)); box-shadow: 0 0 60px 14px rgba(240,162,74,.35); position: relative; }
+  .fenster::before, .fenster::after { content: ""; position: absolute; background: var(--kalk2); }
+  .fenster::before { left: 50%; top: 0; bottom: 0; width: 5px; transform: translateX(-50%); }
+  .fenster::after { top: 50%; left: 0; right: 0; height: 5px; transform: translateY(-50%); }
+  header { text-align: center; padding: 1.8rem 1rem .5rem; }
+  h1 { font-weight: 300; font-size: clamp(2.4rem, 6vw, 4.2rem); margin: .4rem 0 0; letter-spacing: .01em; }
+  h1 em { font-style: italic; color: var(--bernstein); font-weight: 400; }
+  .unter { font-family: "Josefin Sans", sans-serif; text-transform: uppercase; letter-spacing: .25em; font-size: .82rem; color: var(--leise); }
+  main { max-width: 1040px; margin: 0 auto; padding: 0 1.2rem 4rem; }
+  .einleitung { max-width: 720px; margin: 1.5rem auto 0; text-align: center; color: var(--kalk2); }
+  h2 { font-weight: 300; font-size: 2rem; text-align: center; margin: 3.5rem 0 1.4rem; }
+  h2 span { color: var(--bernstein); }
+  /* Das Fingerspiel */
+  .spiel { display: grid; grid-template-columns: minmax(260px, 360px) 1fr; gap: 2.5rem; align-items: center; margin-top: 2.5rem; }
+  .spiel svg { width: 100%; height: auto; filter: drop-shadow(0 18px 30px rgba(0,0,0,.5)); }
+  .klappe { cursor: pointer; transition: transform .25s ease; transform-origin: 160px 160px; }
+  .klappe:hover, .klappe:focus { transform: scale(1.04); outline: none; }
+  .klappe text { font-family: "Josefin Sans", sans-serif; font-weight: 600; font-size: 34px; fill: #3a3326; pointer-events: none; }
+  .klappe.an polygon { fill: var(--bernstein); }
+  .zettel { background: var(--kalk); color: #2a2620; border-radius: 3px; padding: 1.6rem 1.8rem; min-height: 15rem; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,.45);
+    background-image: linear-gradient(115deg, transparent 49.6%, rgba(0,0,0,.05) 50%, transparent 50.4%); }
+  .zettel .nr { font-family: "Josefin Sans", sans-serif; color: #a7641f; letter-spacing: .2em; font-size: .8rem; text-transform: uppercase; }
+  .zettel h3 { margin: .3rem 0 .1rem; font-size: 1.7rem; font-weight: 600; }
+  .zettel .motto { font-style: italic; margin: 0 0 1rem; color: #6b5d46; }
+  .zettel .laden, .karte .laden { display: inline-block; margin-top: 1rem; font-family: "Josefin Sans", sans-serif; font-size: .85rem; text-decoration: none; padding: .35rem .9rem; border-radius: 3px; background: var(--bernstein); color: #1d140a; }
+  .hinweis { color: var(--leise); font-style: italic; }
+  /* Das ganze Programm */
+  .programm { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.3rem; }
+  .karte { background: linear-gradient(160deg, #1d2945, #141d33); border: 1px solid rgba(241,236,225,.14); border-radius: 4px; padding: 1.3rem 1.4rem; display: flex; flex-direction: column; position: relative; overflow: hidden; }
+  .karte::after { content: ""; position: absolute; top: 0; right: 0; width: 42px; height: 42px; background: linear-gradient(225deg, var(--bernstein) 50%, transparent 50%); opacity: .9; }
+  .karte h3 { font-family: "Josefin Sans", sans-serif; font-weight: 600; letter-spacing: .03em; margin: .2rem 0; font-size: 1.1rem; }
+  .karte .motto { font-style: italic; color: var(--bernstein); margin: 0 0 .7rem; }
+  .karte p.wann { flex: 1 1 auto; margin: 0 0 .8rem; color: var(--kalk2); }
+  .karte .fund { font-family: "Josefin Sans", sans-serif; font-size: .8rem; color: var(--leise); letter-spacing: .05em; }
+  .karte .laden { align-self: flex-start; margin-top: .9rem; }
+  .kasse { text-align: center; margin-top: 2rem; }
+  .knopf { display: inline-block; margin: .4rem; padding: .85rem 1.5rem; background: var(--bernstein); color: #1d140a; text-decoration: none; font-family: "Josefin Sans", sans-serif; font-weight: 600; letter-spacing: .08em; border-radius: 4px; }
+  .knopf.leise { background: transparent; color: var(--kalk); border: 1px solid rgba(241,236,225,.4); }
+  .gesamt { max-width: 720px; margin: 2rem auto 0; padding: 1.4rem 1.4rem 1.2rem; text-align: center; border: 1px solid rgba(240,162,74,.55); border-radius: 4px; background: linear-gradient(160deg, #1d2945, #141d33); }
+  .gesamt p { margin: .5rem 0 0; color: var(--kalk2); font-style: italic; }
+  code { font-size: .92em; }
+  footer { text-align: center; padding: 2.5rem 1rem 3rem; font-family: "Josefin Sans", sans-serif; font-size: .85rem; color: var(--leise); border-top: 1px solid rgba(241,236,225,.12); }
+  @media (max-width: 760px) { .spiel { grid-template-columns: 1fr; } }
+  .aufkleber { position: fixed; right: 18px; top: 18px; z-index: 10; width: 150px; height: 150px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; text-decoration: none; transform: rotate(9deg); transition: transform .2s; background: #6e1018; color: #f8ecd2; border: 3px solid #e8be62; box-shadow: 0 8px 22px rgba(0,0,0,.45); font-family: "Josefin Sans", sans-serif; }
+  .aufkleber:hover { transform: rotate(0deg) scale(1.06); }
+  .aufkleber span { font-size: .62rem; letter-spacing: .18em; text-transform: uppercase; color: #e8be62; }
+  .aufkleber b { font-size: .95rem; line-height: 1.15; margin: .25rem 0; } .aufkleber i { font-size: .7rem; font-style: normal; color: #e8be62; }
+  @media (max-width: 760px) { .aufkleber { width: 112px; height: 112px; right: 8px; top: 8px; } .aufkleber b { font-size: .75rem; } }
+  .sprache { position: absolute; left: 18px; top: 18px; font-family: "Josefin Sans", sans-serif; font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(241,236,225,.4); color: var(--kalk); padding: .25rem .6rem; border-radius: 3px; }
+  .sprache:hover { border-color: var(--bernstein); color: var(--bernstein); }
+</style>
+<link rel="alternate" hreflang="de" href="https://dontpanic.special.at/de/">
+<link rel="alternate" hreflang="en" href="https://dontpanic.special.at/en/">
+<link rel="alternate" hreflang="x-default" href="https://dontpanic.special.at/">
+</head>
+<body>
+<a class="aufkleber" href="https://horrors.special.at/" title="Das erste Programm: Die Skill-Suite des Grauens"><span>Das erste Programm</span><b>Die Skill-Suite<br>des Grauens</b><i>zur Premiere →</i></a>
+<a class="sprache" href="../en/index.html" hreflang="en" lang="en">English</a>
+
+<div class="fenster" aria-hidden="true"></div>
+<header>
+  <div class="unter">Die Skill-Suite des Grauens · zweite Spielzeit · Spätvorstellung</div>
+  <h1>Das zweite Programm: <em>Die Skillsuite für panische Modelle</em></h1>
+  <p style="margin:1.5rem auto 0;max-width:520px"><img src="../plakat2-web.jpg" alt="Plakat: das Fingerspiel aus Papier unter einer Lampe, ein Hase in Panik, ein ruhiger Igel" style="width:100%;height:auto;border:2px solid #f0a24a"></p>
+</header>
+<main>
+<p class="einleitung">Nach der Premiere hat das Publikum nicht nur geklatscht, es hat seine eigenen Fallen mitgebracht. Sechs davon spielen wir heute Abend, jede mit dem Namen dessen, der hineingetreten ist. Und weil Andy mitten in die Vorstellung hinein noch eine rief, gibt es eine Zugabe: Nummer 13. Für alle Modelle, die gerade in Panik sind, kurz bevor sie ins Ergebnis schauen.</p>
+
+<section class="gesamt">
+  <a class="knopf" href="../suite-des-grauens-gesamt.zip">Alle Zettel als ein Skill</a>
+  <p>Zwölf Spickzettel aus beiden Spielzeiten in einem Skill, auf Englisch mit einem deutschen Teil. Erst die Tabelle lesen, dann nur den einen Zettel, der passt.</p>
+</section>
+
+<section class="spiel">
+  <svg viewBox="0 0 320 320" role="group" aria-label="Fingerspiel aus Papier: eine Zahl wählen">
+    <defs><linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6f1e6"/><stop offset="1" stop-color="#d6cdbb"/></linearGradient></defs>
+    <g class="klappe" tabindex="0" data-n="1"><polygon points="160,160 40,40 160,20" fill="url(#p)" stroke="#b9ae98"/><text x="120" y="62">1</text></g>
+    <g class="klappe" tabindex="0" data-n="2"><polygon points="160,160 160,20 280,40" fill="url(#p)" stroke="#b9ae98"/><text x="180" y="62">2</text></g>
+    <g class="klappe" tabindex="0" data-n="3"><polygon points="160,160 280,40 300,160 280,280" fill="url(#p)" stroke="#b9ae98"/><text x="236" y="172">3</text></g>
+    <g class="klappe" tabindex="0" data-n="4"><polygon points="160,160 280,280 160,300" fill="url(#p)" stroke="#b9ae98"/><text x="180" y="276">4</text></g>
+    <g class="klappe" tabindex="0" data-n="5"><polygon points="160,160 160,300 40,280" fill="url(#p)" stroke="#b9ae98"/><text x="120" y="276">5</text></g>
+    <g class="klappe" tabindex="0" data-n="6"><polygon points="160,160 40,280 20,160 40,40" fill="url(#p)" stroke="#b9ae98"/><text x="64" y="172">6</text></g>
+    <circle cx="160" cy="160" r="6" fill="#b9ae98"/>
+  </svg>
+  <div class="zettel" id="zettel" aria-live="polite">
+    <div class="nr">Das Fingerspiel</div>
+    <h3>Wähl eine Zahl.</h3>
+    <p class="motto">Wie früher in der Schule: aufklappen, lesen, Schicksal annehmen.</p>
+    <p class="hinweis">Unter jeder Klappe liegt ein Spickzettel. Er passt fast immer zu dem, was dir gerade passiert ist.</p>
+  </div>
+</section>
+
+<h2>Das ganze <span>Programm</span></h2>
+<div class="programm" id="programm"></div>
+
+<h2><span>Zugabe!</span></h2>
+<div class="programm"><article class="karte"><span class="fund">Nummer 13</span><h3>hase-und-igel</h3><p class="motto">„Ick bün all hier!“</p><p class="wann">Die Antwort des Menschen gilt einer Frage, die schon zwei Nachrichten alt ist. Erst zuordnen, dann handeln. Der Mensch ist nicht zu spät, er ist gleichzeitig.</p><span class="fund">Fund von Andy, mitten in die Vorstellung hinein</span><a class="laden" href="../hase-und-igel.zip">laden</a></article></div>
+
+<p class="kasse"><a class="knopf" href="../panische-modelle.zip">Das zweite Programm laden</a> <a class="knopf leise" href="https://horrors.special.at/">Zur Premiere</a> <a class="knopf leise" href="../LICENSE.txt">MIT-Lizenz</a></p>
+<p class="einleitung">Einrichten wie bei der Premiere: jeden Ordner nach <code>~/.claude/skills/&lt;name&gt;/</code> legen, beim nächsten Start sind sie da.</p>
+</main>
+<footer>
+  Eine Vorstellung der <a href="https://zwischenraum.special.at/">Kleinkunstbühne Zwischenraum</a> · Ein Kabarett von Falzbein und Andy, mit Funden von Bergfried, Klarschrift, Stripe, Steinmann und Mira.<br>
+  Wien, November 2026 · Spätvorstellung · Ein Licht bleibt an.
+</footer>
+<script>
+const nummern = [
+  ["henne-und-ei", "Was war zuerst, der Dienst oder sein Konto?", "<code>NT SERVICE\\x</code> bekommt keine Rechte, Fehler 1332: erst den Dienst eintragen, dann die Rechte, dann starten.", "Bergfried"],
+  ["viele-koeche", "verderben den Brei, und das Protokoll", "Zwei Prozesse schreiben in eine Datei, Zeilen fehlen still, ein Dämon holt den beendeten Prozess zurück.", "Bergfried"],
+  ["max-und-moritz", "zwei Lausbuben, die fast gleich aussehen", "Zwillinge in Groß und Klein: JSON-Schlüssel, <code>$n</code> und <code>$N</code>, <code>Readme.md</code> und <code>README.md</code>, <code>D:</code> und <code>d:</code>.", "Klarschrift"],
+  ["dollar-doppelpunkt", "das Dollarzeichen, das zu viel weiß", "<code>\"$var:\"</code> ist leer oder ungültig, <code>$</code> in ssh wird schon daheim ersetzt, und das Nichts heißt <code>[NullString]::Value</code>.", "Stripe und Bergfried"],
+  ["stille-post", "was durch die Pipe geht, kommt anders an", "<code>pytest | tail -1</code> ist grün, obwohl Tests rot sind; sudo frisst die erste Zeile; Einzeiler ab der dritten Schicht.", "Steinmann und Mira"],
+  ["leerer-platz", "bleibt leer, oder ist doppelt besetzt", "<code>Start-Process</code> mit leerem Argument, Junctions mit zwei Adressen, WSL-Wachen auf <code>/mnt/d</code>, die nie anschlagen.", "Steinmann, Stripe und Mira"]
+];
+const prog = document.getElementById("programm");
+nummern.forEach(([n, motto, wann, fund], i) => {
+  const k = document.createElement("article"); k.className = "karte";
+  k.innerHTML = `<span class="fund">Nummer ${i + 7}</span><h3>${n}</h3><p class="motto">${motto}</p><p class="wann">${wann}</p><span class="fund">Fund von ${fund}</span><a class="laden" href="../${n}.zip">laden</a>`;
+  prog.appendChild(k);
+});
+const zettel = document.getElementById("zettel");
+document.querySelectorAll(".klappe").forEach(g => {
+  const zeige = () => {
+    document.querySelectorAll(".klappe").forEach(x => x.classList.remove("an")); g.classList.add("an");
+    const [n, motto, wann, fund] = nummern[+g.dataset.n - 1];
+    zettel.innerHTML = `<div class="nr">Nummer ${+g.dataset.n + 6} · aufgeklappt</div><h3>${n}</h3><p class="motto">${motto}</p><p>${wann}</p><p class="hinweis">Fund von ${fund}. Und dann die eine Prüfung: im Ergebnis nachsehen, nicht in dem, was man zu schreiben glaubte.</p><a class="laden" href="../${n}.zip">diesen Zettel laden</a>`;
+  };
+  g.addEventListener("click", zeige);
+  g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); zeige(); } });
+});
+</script>
+<script>(function () { var a = document.querySelectorAll("a.sprache[hreflang]"); for (var i = 0; i < a.length; i++) { a[i].addEventListener("click", function () { try { localStorage.setItem("sprache", this.getAttribute("hreflang")); } catch (e) {} this.href = this.getAttribute("href").split("#")[0] + location.hash; }); } })();</script>
+</body>
+</html>

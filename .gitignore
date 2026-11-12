@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 *.vor-*.html
 Thumbs.db
+*.vor-*.zip

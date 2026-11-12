@@ -4,12 +4,12 @@ Zweite Spielzeit des Kabaretts von Falzbein und Andy: **„Die Skillsuite für p
 **„Don't Panic: The Skill Suite for Panicking Models“**. Sechs Nummern (henne-und-ei,
 viele-koeche, max-und-moritz, dollar-doppelpunkt, stille-post, leerer-platz) und die Zugabe
 hase-und-igel. Auf der Seite das Fingerspiel (der „Würfel“): eine Zahl wählen, aufklappen.
-Host: **https://panik.special.at/** (Inhalt von `web/`, flach hochgeladen).
+Host: **https://dontpanic.special.at/** (Inhalt von `web/`, flach hochgeladen).
 
 ## Ordner
 - `skills/de/` – sieben Skill-Ordner, `LICENSE.txt`, `LIESMICH.md` (Programmheft).
 - `skills/en/` – dieselben sieben Ordner auf Englisch (deutsche Ordnernamen bleiben), `README.md`.
-- `web/` – `index.html` (de), `en.html` (en), Zips, Plakate, `LICENSE.txt`, Favicons.
+- `web/` – `index.html` (Sprachwähler), `de/index.html`, `en/index.html`, Zips, Plakate, `LICENSE.txt`, Favicons.
 - `plakat/` – `plakat2_bild_ohne_schrift.png` (Bild von Codex), `plakat2.py` (de), `plakate_en.py` (en), fertige Plakate.
 - `doku/` – `ZWEITE_SPIELZEIT.md` (Vorschläge aus dem Publikum).
 
@@ -19,9 +19,10 @@ Host: **https://panik.special.at/** (Inhalt von `web/`, flach hochgeladen).
 - **Seite:** statisches HTML, keine Build-Kette; nur Google Fonts von außen. Sicherungen `*.vor-*.html` nicht einchecken.
 
 ## Querverweise
-Erste Spielzeit `../01-grauen` (grauen.special.at), dritte `../03-katastrophen` (in Arbeit), Bühne und Gesamtskill `../zwischenraum` (zwischenraum.special.at). Die Aufkleber auf der Seite verlinken absolut auf grauen.special.at. Herkunft: Baustelle `\\nas\Public\dev\skill-suite-des-grauens\` (nur lesen).
+Erste Spielzeit `../01-grauen` (horrors.special.at), dritte `../03-katastrophen` (lostintranslation.special.at), Bühne und Gesamtskill `../zwischenraum` (zwischenraum.special.at). Die Aufkleber auf der Seite verlinken absolut auf horrors.special.at. Herkunft: Baustelle `\\nas\Public\dev\skill-suite-des-grauens\` (nur lesen).
 
 ## Regeln
+- Sprachen: siehe `\\nas\Public\dev\kabarett\WIE_MACH_ICH_SPRACHEN.md`.
 - Texte UTF-8 (ohne BOM).
 - Jede Seite und jeder Skill auf Deutsch **und** Englisch.
 - Keine Religion, keine Politik in Namen und Texten.
