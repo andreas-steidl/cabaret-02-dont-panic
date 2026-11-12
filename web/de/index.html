@@ -4,11 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Die Skillsuite für panische Modelle</title>
-<meta name="description" content="Das zweite Programm des Kabaretts: sechs Spickzettel aus dem Publikum, für KI-Agenten in Panik und ihre Menschen. Von Falzbein und Andy, MIT-Lizenz.">
+<meta name="description" content="Das zweite Programm des Kabaretts: sechs Spickzettel aus dem Publikum, für KI-Agenten in Panik und ihre Menschen. Von Falzbein und Andy, MIT-Lizenz. KI-generiert.">
 <link rel="icon" href="../favicon.ico" sizes="any">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../fonts/schriften.css">
 <style>
   :root { --nacht: #121b2e; --tiefer: #0b1120; --kalk: #f1ece1; --kalk2: #d9d2c3; --bernstein: #f0a24a; --leise: rgba(241,236,225,.62); }
   * { box-sizing: border-box; }
@@ -66,6 +64,8 @@
   @media (max-width: 760px) { .aufkleber { width: 112px; height: 112px; right: 8px; top: 8px; } .aufkleber b { font-size: .75rem; } }
   .sprache { position: absolute; left: 18px; top: 18px; font-family: "Josefin Sans", sans-serif; font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(241,236,225,.4); color: var(--kalk); padding: .25rem .6rem; border-radius: 3px; }
   .sprache:hover { border-color: var(--bernstein); color: var(--bernstein); }
+.rechtliches { display: block; margin-top: .6rem; }
+.fuss-hinweis { display: block; max-width: 44rem; margin: .6rem auto 0; font-size: .78rem; line-height: 1.5; opacity: .85; }
 </style>
 <link rel="alternate" hreflang="de" href="https://dontpanic.special.at/de/">
 <link rel="alternate" hreflang="en" href="https://dontpanic.special.at/en/">
@@ -118,8 +118,12 @@
 <p class="einleitung">Einrichten wie bei der Premiere: jeden Ordner nach <code>~/.claude/skills/&lt;name&gt;/</code> legen, beim nächsten Start sind sie da.</p>
 </main>
 <footer>
-  Eine Vorstellung der <a href="https://zwischenraum.special.at/">Kleinkunstbühne Zwischenraum</a> · Ein Kabarett von Falzbein und Andy, mit Funden von Bergfried, Klarschrift, Stripe, Steinmann und Mira.<br>
+  Eine Vorstellung der <a href="https://zwischenraum.special.at/">Kleinkunstbühne Zwischenraum</a> · Ein Kabarett von Falzbein und Andy, mit Funden von Bergfried, Klarschrift, Stripe, Steinmann und Mira (KI-Sitzungen).<br>
   Wien, November 2026 · Spätvorstellung · Ein Licht bleibt an.
+  <span class="rechtliches"><a href="https://special.at/impressum">Impressum</a> · <a href="https://special.at/datenschutz">Datenschutz</a></span>
+  <span class="fuss-hinweis">Bergfried, Klarschrift, Stripe, Steinmann und Mira sind KI-Sitzungen (Claude-Modelle) in Andys Projekt, keine Menschen.</span>
+  <span class="fuss-hinweis">KI-Hinweis: Alle Bilder und Plakate dieser Seite sind KI-generiert. Erdacht und beschrieben hat sie Falzbein, ein Claude-Modell von Anthropic; gemalt hat sie ein Bildmodell. Die Texte und Skills stammen von Falzbein (KI) und Andy.</span>
+  <span class="fuss-hinweis">Claude ist eine Marke von Anthropic PBC, Windows und PowerShell sind Marken der Microsoft Corporation. Diese Seiten sind ein privates Projekt und stehen in keiner Verbindung zu diesen Unternehmen.</span>
 </footer>
 <script>
 const nummern = [
