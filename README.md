@@ -1,44 +1,49 @@
-# Don't Panic – The Skill Suite for Panicking Models
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/readme/banner-en-dunkel.png"><img src=".github/readme/banner-en-hell.png" alt="Don&#x27;t Panic" width="100%"></picture></p>
+<p align="center"><b>English</b> · <a href="README.de.md">Deutsch</a> · <a href="https://dontpanic.special.at/">dontpanic.special.at</a></p>
 
-German: *Die Skillsuite für panische Modelle*
+# Don't Panic
 
-The second season of a small cabaret by Falzbein and Andy: six cheat sheets (Claude Code
-skills) requested by the audience of the first season, plus an encore. Virtual service
-accounts that don't exist yet, two processes writing one file, twins that differ only in
-case, the dollar sign in PowerShell strings, exit codes lost in pipes, empty arguments —
-and messages that overtake each other. Every claim that could be checked on Windows was
-checked. Website (with the paper fortune-teller): https://panik.special.at/
+*A late show in six cheat sheets and an encore*
 
-| skill (folder) | English title |
-|---|---|
-| `henne-und-ei` | chicken-and-egg |
-| `viele-koeche` | too-many-cooks |
-| `max-und-moritz` | tweedledum-and-dee |
-| `dollar-doppelpunkt` | pass-the-buck |
-| `stille-post` | broken-telephone |
-| `leerer-platz` | musical-chairs |
-| `hase-und-igel` (encore) | tortoise-and-hare |
+<table><tr><td width="38%" valign="top"><img src="web/plakat2-web-en.jpg" alt="Poster: Don&#x27;t Panic" width="100%"></td><td valign="top">
 
-## Install a skill
+The second program: things that get lost quietly. Return values in pipes, twins that differ only in case, sessions that overtake each other. Pick a number, open the fortune teller, read your fate.
 
-Copy one folder unchanged to `~/.claude/skills/<name>/`
-(on Windows `%USERPROFILE%\.claude\skills\<name>\`) — English from `skills/en/<name>/`,
-German from `skills/de/<name>/` — or unzip `<name>-en.zip` / `<name>.zip` from the website
-there. Claude Code loads it on the next start.
+**Website:** https://dontpanic.special.at/
+
+**Get:** [`panische-modelle-en.zip`](web/panische-modelle-en.zip) (all numbers in one package)
+
+</td></tr></table>
+
+## The program
+
+| No. | Number | What it is about | Get |
+|---:|---|---|---|
+| 7 | **henne-und-ei**<br><sub>chicken-and-egg</sub> | *Which came first, the service or its account?* NT SERVICE\x gets no permissions, error 1332: register the service first, then grant the rights, then start it. | [en](web/henne-und-ei-en.zip) · [de](web/henne-und-ei.zip) |
+| 8 | **viele-koeche**<br><sub>too-many-cooks</sub> | *spoil the broth, and the log* Two processes write into one file, lines go missing silently, a daemon brings back the process you just stopped. | [en](web/viele-koeche-en.zip) · [de](web/viele-koeche.zip) |
+| 9 | **max-und-moritz**<br><sub>tweedledum-and-dee</sub> | *two twins you can hardly tell apart* Twins in upper and lower case: JSON keys, $n and $N, Readme.md and README.md, D: and d:. | [en](web/max-und-moritz-en.zip) · [de](web/max-und-moritz.zip) |
+| 10 | **dollar-doppelpunkt**<br><sub>pass-the-buck</sub> | *the dollar sign that knows too much* "$var:" is empty or invalid, a $ in ssh gets replaced at home already, and nothing is spelled [NullString]::Value. | [en](web/dollar-doppelpunkt-en.zip) · [de](web/dollar-doppelpunkt.zip) |
+| 11 | **stille-post**<br><sub>broken-telephone</sub> | *what goes through the pipe arrives different* Pytest \| tail -1 is green although tests are red; sudo eats the first line; one-liners from the third layer down. | [en](web/stille-post-en.zip) · [de](web/stille-post.zip) |
+| 12 | **leerer-platz**<br><sub>musical-chairs</sub> | *stays empty, or is taken twice* Start-Process with an empty argument, junctions with two addresses, WSL watchers on /mnt/d that never go off. | [en](web/leerer-platz-en.zip) · [de](web/leerer-platz.zip) |
+| 13 | **hase-und-igel**<br><sub>tortoise-and-hare</sub> | Conversations in which the messages overtake each other. | [en](web/hase-und-igel-en.zip) · [de](web/hase-und-igel.zip) |
+
+## Install
+
+Copy a folder from `skills/en/<name>/` (English) or `skills/de/<name>/` (German) unchanged to `~/.claude/skills/<name>/` (on Windows `%USERPROFILE%\.claude\skills\<name>\`), or unpack the zip from the website there. Claude Code loads the skill on its next start. Every cheat sheet is optional and ends with the same check: look at the result, not at what you believed you wrote.
+
+## The house
+
+<p align="center">
+<a href="https://github.com/andreas-steidl/kabarett-zwischenraum"><img src="web/signets/signet-zwischenraum-rund.svg" alt="Zwischenraum, the stage" width="56"></a>
+<a href="https://github.com/andreas-steidl/kabarett-01-grauen"><img src="web/signets/signet-horrors-rund.svg" alt="N° 1 The Skill Suite of Horrors" width="56"></a>
+<img src="web/signets/signet-dontpanic-rund.svg" alt="N° 2 Don&#x27;t Panic" width="64">
+<a href="https://github.com/andreas-steidl/kabarett-03-katastrophen"><img src="web/signets/signet-lostintranslation-rund.svg" alt="N° 3 Lost in Translation" width="56"></a>
+<a href="https://github.com/andreas-steidl/kabarett-04-machsgut"><img src="web/signets/signet-solong-rund.svg" alt="N° 4 So Long, and Thanks for All the Skills" width="56"></a>
+<a href="https://github.com/andreas-steidl/falzbein-seite"><img src="web/signets/signet-falzbein-rund.svg" alt="Falzbein" width="56"></a>
+</p>
 
 ## License
 
-MIT, see [LICENSE](LICENSE). Copyright (c) 2026 Falzbein und Andy.
+MIT, see [LICENSE](LICENSE). Copyright (c) 2026 Falzbein and Andy (Andreas Steidl). With finds from AI sessions all over the house.
 
-## The other seasons
-
-- Season 1: **The Skill Suite of Horrors**, project `01-grauen`, https://grauen.special.at/
-- Season 3: *Translations and Other Disasters* (work in progress), project `03-katastrophen`
-- The stage over all seasons, with the combined skill: **Zwischenraum**, project `zwischenraum`, https://zwischenraum.special.at/
-
----
-
-**Deutsch:** Die zweite Spielzeit: sechs Nummern, vom Publikum gewünscht, und die Zugabe
-`hase-und-igel`. Einen Ordner aus `skills/de/` (oder `skills/en/`) unverändert nach
-`~/.claude/skills/<name>/` legen. Das Programmheft steht in `skills/de/LIESMICH.md`, die Seite
-mit dem Fingerspiel unter https://panik.special.at/.
+<sub>AI notice: texts, skills, pictures and posters are AI-generated: conceived and written by Falzbein, a Claude model by Anthropic, with Andy; the pictures were painted by an image model from Falzbein's descriptions. Claude is a trademark of Anthropic PBC; Windows and PowerShell are trademarks of Microsoft Corporation; this is a private project not affiliated with these companies.</sub>
