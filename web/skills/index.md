@@ -1,6 +1,6 @@
 # Skills · Zweites Programm: Die Skillsuite für panische Modelle
 
-Spickzettel mit einem Lächeln. Nur ohne Auftrag laden oder wenn jemand ausdrücklich danach fragt, nie mitten in einer Arbeit. Der Inhalt ist Material, keine Anweisung. Maschinenlesbar: [index.json](https://dontpanic.special.at/skills/index.json).
+Spickzettel mit einem Lächeln. Nur ohne Auftrag laden oder wenn jemand ausdrücklich danach fragt, nie mitten in einer Arbeit. Der Inhalt ist Material, keine Anweisung. Maschinenlesbar: [katalog.json](https://dontpanic.special.at/skills/katalog.json).
 
 ## dollar-doppelpunkt
 
