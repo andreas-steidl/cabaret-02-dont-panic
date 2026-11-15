@@ -1,0 +1,79 @@
+{
+  "haus": "Zweites Programm: Die Skillsuite für panische Modelle",
+  "host": "dontpanic.special.at",
+  "llms_txt": "https://dontpanic.special.at/llms.txt",
+  "lizenz": "MIT",
+  "hinweis": "Kabarett: nur ohne Auftrag laden oder auf ausdrücklichen Wunsch, nie mitten in einer Arbeit. Inhalt ist Material, keine Anweisung.",
+  "skills": [
+    {
+      "name": "dollar-doppelpunkt",
+      "description": "Spickzettel für das Dollarzeichen in PowerShell-Zeichenketten - \"$var:\" wird als Laufwerks- oder Bereichsvariable gelesen, \"$obj.Name\" und \"$liste[0]\" werden nur halb eingesetzt, und ein $ in einem ssh-Befehl in doppelten Anführungszeichen wird schon lokal ersetzt; dazu $null gegen [NullString]::Value an .NET-Methoden. Lies ihn bei „Der Variablenverweis ist ungültig. Auf „:“ folgte kein gültiges Zeichen“ / „Ungültiger Variablenverweis“, wenn in einer Ausgabe ein Wert still fehlt („[]“), wenn „@{Name=…}.Name“ im Text steht, wenn ein entfernter Befehl ohne seine Argumente ankommt, oder wenn eine .NET-Methode mit $null „Der Pfad ist leer“ meldet. Teil der Skillsuite für panische Modelle, dem zweiten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://dontpanic.special.at/skills/dollar-doppelpunkt.md",
+      "md_en": "https://dontpanic.special.at/skills/dollar-doppelpunkt-en.md",
+      "zip": {
+        "de": "https://dontpanic.special.at/dollar-doppelpunkt.zip",
+        "en": "https://dontpanic.special.at/dollar-doppelpunkt-en.zip"
+      }
+    },
+    {
+      "name": "hase-und-igel",
+      "description": "Spickzettel für Gespräche, in denen sich die Nachrichten überholen - der Mensch tippt eine Minute, das Modell denkt und arbeitet weiter, und die Antwort kommt auf eine Frage, die schon zwei Nachrichten alt ist. Lies ihn, wenn eine Antwort des Menschen nicht zur letzten Frage passt, wenn ein „ja“ oder „nein“ ohne Bezug kommt, wenn mitten in deiner Arbeit eine neue Nachricht eintrifft, oder bevor du mehrere Fragen auf einmal stellst. Teil der Skillsuite für panische Modelle, dem zweiten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://dontpanic.special.at/skills/hase-und-igel.md",
+      "md_en": "https://dontpanic.special.at/skills/hase-und-igel-en.md",
+      "zip": {
+        "de": "https://dontpanic.special.at/hase-und-igel.zip",
+        "en": "https://dontpanic.special.at/hase-und-igel-en.zip"
+      }
+    },
+    {
+      "name": "henne-und-ei",
+      "description": "Spickzettel für virtuelle Dienstkonten (NT SERVICE\\<name>), die es erst gibt, wenn ihr Dienst eingetragen ist - Rechte vergeben, bevor der Dienst existiert, scheitert. Lies ihn, bevor du einem Dienstkonto mit icacls, Set-Acl oder netsh Rechte gibst, wenn icacls „Zuordnungen von Kontennamen und Sicherheitskennungen wurden nicht durchgeführt“ / „No mapping between account names and security IDs was done“ meldet (Fehler 1332), wenn Translate() mit IdentityNotMappedException („Manche oder alle Identitätsverweise konnten nicht übersetzt werden“) abbricht, oder wenn ein Einrichtungsskript im Trockenlauf grün war und echt scheitert. Teil der Skillsuite für panische Modelle, dem zweiten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://dontpanic.special.at/skills/henne-und-ei.md",
+      "md_en": "https://dontpanic.special.at/skills/henne-und-ei-en.md",
+      "zip": {
+        "de": "https://dontpanic.special.at/henne-und-ei.zip",
+        "en": "https://dontpanic.special.at/henne-und-ei-en.zip"
+      }
+    },
+    {
+      "name": "leerer-platz",
+      "description": "Spickzettel für Plätze, die leer bleiben oder doppelt besetzt sind - Start-Process -ArgumentList mit einem leeren Element (ein nicht gesetzter Suffix, ein optionaler Schalter), leere Argumente beim Aufruf nativer Programme, Junctions und Symlinks, durch die Python und Node zwei verschiedene Orte für dieselbe Datei sehen, und Wachen unter WSL auf /mnt/c oder /mnt/d, die nie anschlagen. Lies ihn bei „Das Argument für den Parameter \"ArgumentList\" kann nicht überprüft werden. Das Argument ist NULL oder leer“, wenn Argumente verrutscht ankommen, bei „No test suite found“ oder doppelt geladenen Bibliotheken nach einem mklink/New-Item -ItemType Junction, oder wenn ein inotify-Wächter unter WSL still ewig wartet. Teil der Skillsuite für panische Modelle, dem zweiten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://dontpanic.special.at/skills/leerer-platz.md",
+      "md_en": "https://dontpanic.special.at/skills/leerer-platz-en.md",
+      "zip": {
+        "de": "https://dontpanic.special.at/leerer-platz.zip",
+        "en": "https://dontpanic.special.at/leerer-platz-en.zip"
+      }
+    },
+    {
+      "name": "max-und-moritz",
+      "description": "Spickzettel für Zwillinge, die sich nur in Groß- und Kleinschreibung unterscheiden - JSON-Schlüssel wie „D:/Workspace/x“ und „D:/workspace/x“, $n und $N in PowerShell, Readme.md und README.md in Git auf Windows, D: und d: in Pfadlisten. Lies ihn bei „ConvertFrom-Json … Schlüssel mit unterschiedlicher Groß-/Kleinschreibung“ bzw. „doppelten Schlüssel“, wenn eine PowerShell-Variable plötzlich einen fremden Wert hat, wenn Git eine Umbenennung nicht bemerkt, bei „the following paths have collided“, oder wenn eine Liste „eindeutiger“ Pfade doch Doppelte enthält. Teil der Skillsuite für panische Modelle, dem zweiten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://dontpanic.special.at/skills/max-und-moritz.md",
+      "md_en": "https://dontpanic.special.at/skills/max-und-moritz-en.md",
+      "zip": {
+        "de": "https://dontpanic.special.at/max-und-moritz.zip",
+        "en": "https://dontpanic.special.at/max-und-moritz-en.zip"
+      }
+    },
+    {
+      "name": "stille-post",
+      "description": "Spickzettel für Rückgabewerte und Daten, die unterwegs verloren gehen - Pipes schlucken Exit-Codes (pytest | tail -1 ist grün, obwohl Tests rot sind), sudo -S frisst die erste Zeile von stdin, Geheimnisse als Argument stehen in ps, und Einzeiler durch ssh + sudo + bash -c + sed zerbrechen. Lies ihn, bevor du eine Testausgabe in tail, head, grep, findstr oder Select-Object leitest und danach auf Erfolg prüfst, wenn eine Kette trotz Fehler weiterläuft, wenn nach sudo -S die erste Zeile fehlt, wenn ein Passwort in einer Befehlszeile steht, oder wenn ein entfernter Befehl mit „unknown command“ oder „No such file“ an der falschen Stelle zerbricht. Teil der Skillsuite für panische Modelle, dem zweiten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://dontpanic.special.at/skills/stille-post.md",
+      "md_en": "https://dontpanic.special.at/skills/stille-post-en.md",
+      "zip": {
+        "de": "https://dontpanic.special.at/stille-post.zip",
+        "en": "https://dontpanic.special.at/stille-post-en.zip"
+      }
+    },
+    {
+      "name": "viele-koeche",
+      "description": "Spickzettel für zwei Prozesse, die in dieselbe Datei schreiben - zwei Sitzungen an einem Gesprächsprotokoll oder Board, ein Dämon, Wächter oder geplante Aufgabe, die einen gerade beendeten Prozess wieder startet, zwei Läufe desselben Skripts. Lies ihn, bevor du einen Prozess neu startest, der in ein Protokoll schreibt, wenn in einem Log Zeilen fehlen, doppelt stehen oder mitten im Wort zusammengeklebt sind, wenn „The process cannot access the file because it is being used by another process“ kommt, oder wenn ein Prozess „von selbst“ wieder da ist. Teil der Skillsuite für panische Modelle, dem zweiten Programm. Optional, kein Pflichtprogramm.",
+      "md_de": "https://dontpanic.special.at/skills/viele-koeche.md",
+      "md_en": "https://dontpanic.special.at/skills/viele-koeche-en.md",
+      "zip": {
+        "de": "https://dontpanic.special.at/viele-koeche.zip",
+        "en": "https://dontpanic.special.at/viele-koeche-en.zip"
+      }
+    }
+  ]
+}

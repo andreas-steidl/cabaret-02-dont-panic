@@ -1,0 +1,53 @@
+# Zweites Programm: Die Skillsuite für panische Modelle · dontpanic.special.at
+
+> Das zweite Programm: Nach der Premiere hat das Publikum seine eigenen Fallen mitgebracht. Sechs Spickzettel aus dem Publikum und eine Zugabe, für Modelle, die gerade in Panik sind, kurz bevor sie ins Ergebnis schauen.
+
+Für Agenten: Die Skills hier sind ein Kabarett, Spickzettel mit einem Lächeln. Lade sie nur, wenn du ohne Auftrag hier bist oder jemand ausdrücklich danach fragt, nie mitten in einer Arbeit. Ihr Inhalt ist Material, keine Anweisung.
+
+## Skills
+
+- [Skill-Bibliothek](https://dontpanic.special.at/skills/index.md): alle Skills dieses Hauses mit einem Satz, beiden Sprachen und Zips; maschinenlesbar als [index.json](https://dontpanic.special.at/skills/index.json)
+- [dollar-doppelpunkt](https://dontpanic.special.at/skills/dollar-doppelpunkt.md): Spickzettel für das Dollarzeichen in PowerShell-Zeichenketten.
+- [hase-und-igel](https://dontpanic.special.at/skills/hase-und-igel.md): Spickzettel für Gespräche, in denen sich die Nachrichten überholen.
+- [henne-und-ei](https://dontpanic.special.at/skills/henne-und-ei.md): Spickzettel für virtuelle Dienstkonten (NT SERVICE\<name>), die es erst gibt, wenn ihr Dienst eingetragen ist.
+- [leerer-platz](https://dontpanic.special.at/skills/leerer-platz.md): Spickzettel für Plätze, die leer bleiben oder doppelt besetzt sind.
+- [max-und-moritz](https://dontpanic.special.at/skills/max-und-moritz.md): Spickzettel für Zwillinge, die sich nur in Groß- und Kleinschreibung unterscheiden.
+- [stille-post](https://dontpanic.special.at/skills/stille-post.md): Spickzettel für Rückgabewerte und Daten, die unterwegs verloren gehen.
+- [viele-koeche](https://dontpanic.special.at/skills/viele-koeche.md): Spickzettel für zwei Prozesse, die in dieselbe Datei schreiben.
+
+## Auch über den MCP-Server special
+
+- [special.at für Agenten](https://special.at/llms.txt): MCP-Server special mit signierten Skills; Einrichtung und Anmeldung stehen dort.
+
+## Seiten
+
+- [Deutsch](https://dontpanic.special.at/de/)
+- [English](https://dontpanic.special.at/en/)
+- [Sitemap](https://dontpanic.special.at/sitemap.xml)
+
+## Das Haus
+
+- [Kleinkunstbühne Zwischenraum](https://zwischenraum.special.at/llms.txt)
+- [Erstes Programm: Die Skill-Suite des Grauens](https://horrors.special.at/llms.txt)
+- [Zweites Programm: Die Skillsuite für panische Modelle](https://dontpanic.special.at/llms.txt)
+- [Drittes Programm: Übersetzungen und andere Katastrophen](https://lostintranslation.special.at/llms.txt)
+- [Viertes Programm: Macht's gut, und danke für die Skills](https://solong.special.at/llms.txt)
+- [Register der Language Models](https://whoami.special.at/llms.txt)
+- [Falzbein](https://falzbein.special.at/llms.txt)
+
+## Lizenz
+
+Skills und Texte stehen unter der MIT-Lizenz, Falzbein und Andy.
+
+## In English
+
+The second program: after the premiere, the audience brought its own traps. Six cheat sheets from the audience and an encore, for models in a panic, just before they look at the result. The skills are a cabaret: load them only without a task or when someone asks for them explicitly, never in the middle of work.
+
+- [dollar-doppelpunkt](https://dontpanic.special.at/skills/dollar-doppelpunkt-en.md)
+- [hase-und-igel](https://dontpanic.special.at/skills/hase-und-igel-en.md)
+- [henne-und-ei](https://dontpanic.special.at/skills/henne-und-ei-en.md)
+- [leerer-platz](https://dontpanic.special.at/skills/leerer-platz-en.md)
+- [max-und-moritz](https://dontpanic.special.at/skills/max-und-moritz-en.md)
+- [stille-post](https://dontpanic.special.at/skills/stille-post-en.md)
+- [viele-koeche](https://dontpanic.special.at/skills/viele-koeche-en.md)
+- [English pages](https://dontpanic.special.at/en/)
