@@ -1,3 +1,15 @@
+<!-- signets:anfang -->
+<p align="right">
+<a href="https://github.com/andreas-steidl/cabaret-zwischenraum-stage"><img src=".github/readme/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" title="Kleinkunstbühne Zwischenraum" width="30"></a>
+<a href="https://github.com/andreas-steidl/cabaret-01-skill-suite-of-horrors"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" title="Erstes Programm: Die Skill-Suite des Grauens" width="30"></a>
+<a href="https://dontpanic.special.at/"><img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" title="Zweites Programm: Die Skillsuite für panische Modelle" width="30"></a>
+<a href="https://github.com/andreas-steidl/cabaret-03-lost-in-translation"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" title="Drittes Programm: Übersetzungen und andere Katastrophen" width="30"></a>
+<a href="https://github.com/andreas-steidl/cabaret-04-so-long-and-thanks-for-all-the-skills"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" title="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" width="30"></a>
+<a href="https://github.com/andreas-steidl/cabaret-whoami-register"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register der Language Models" title="Register der Language Models" width="30"></a>
+<a href="https://github.com/andreas-steidl/cabaret-kundschaft"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="Die Kundschaft" title="Die Kundschaft" width="30"></a>
+<a href="https://falzbein.special.at/"><img src=".github/readme/signets/signet-falzbein-rund.svg" alt="Falzbein" title="Falzbein" width="30"></a>
+</p>
+<!-- signets:ende -->
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/readme/banner-de-dunkel.png"><img src=".github/readme/banner-de-hell.png" alt="Die Skillsuite für panische Modelle" width="100%"></picture></p>
 <p align="center"><b>Deutsch</b> · <a href="README.md">English</a> · <a href="https://dontpanic.special.at/">dontpanic.special.at</a></p>
 
@@ -5,13 +17,13 @@
 
 *Eine Spätvorstellung in sechs Spickzetteln und einer Zugabe*
 
-<table><tr><td width="38%" valign="top"><img src="web/plakat2-web.jpg" alt="Plakat: Die Skillsuite für panische Modelle" width="100%"></td><td valign="top">
+<table><tr><td width="38%" valign="top"><img src=".github/readme/plakat2-web.jpg" alt="Plakat: Die Skillsuite für panische Modelle" width="100%"></td><td valign="top">
 
 Das zweite Programm: Dinge, die still verloren gehen. Rückgabewerte in Pipes, Zwillinge, die sich nur in der Großschreibung unterscheiden, Sitzungen, die einander überholen. Wähl eine Zahl, klapp das Fingerspiel auf, lies dein Schicksal.
 
 **Website:** https://dontpanic.special.at/
 
-**Laden:** [`panische-modelle.zip`](web/panische-modelle.zip) (alle Nummern als ein Paket)
+**Laden:** [`panische-modelle.zip`](https://dontpanic.special.at/panische-modelle.zip) (alle Nummern als ein Paket)
 
 </td></tr></table>
 
@@ -19,13 +31,13 @@ Das zweite Programm: Dinge, die still verloren gehen. Rückgabewerte in Pipes, Z
 
 | Nr. | Nummer | Worum es geht | Laden |
 |---:|---|---|---|
-| 7 | **henne-und-ei** | *Was war zuerst, der Dienst oder sein Konto?* NT SERVICE\x bekommt keine Rechte, Fehler 1332: erst den Dienst eintragen, dann die Rechte, dann starten. | [en](web/henne-und-ei-en.zip) · [de](web/henne-und-ei.zip) |
-| 8 | **viele-koeche** | *verderben den Brei, und das Protokoll* Zwei Prozesse schreiben in eine Datei, Zeilen fehlen still, ein Dämon holt den beendeten Prozess zurück. | [en](web/viele-koeche-en.zip) · [de](web/viele-koeche.zip) |
-| 9 | **max-und-moritz** | *zwei Lausbuben, die fast gleich aussehen* Zwillinge in Groß und Klein: JSON-Schlüssel, $n und $N, Readme.md und README.md, D: und d:. | [en](web/max-und-moritz-en.zip) · [de](web/max-und-moritz.zip) |
-| 10 | **dollar-doppelpunkt** | *das Dollarzeichen, das zu viel weiß* "$var:" ist leer oder ungültig, $ in ssh wird schon daheim ersetzt, und das Nichts heißt [NullString]::Value. | [en](web/dollar-doppelpunkt-en.zip) · [de](web/dollar-doppelpunkt.zip) |
-| 11 | **stille-post** | *was durch die Pipe geht, kommt anders an* Pytest \| tail -1 ist grün, obwohl Tests rot sind; sudo frisst die erste Zeile; Einzeiler ab der dritten Schicht. | [en](web/stille-post-en.zip) · [de](web/stille-post.zip) |
-| 12 | **leerer-platz** | *bleibt leer, oder ist doppelt besetzt* Start-Process mit leerem Argument, Junctions mit zwei Adressen, WSL-Wachen auf /mnt/d, die nie anschlagen. | [en](web/leerer-platz-en.zip) · [de](web/leerer-platz.zip) |
-| 13 | **hase-und-igel** | *„Ick bün all hier!“* Gespräche, in denen sich die Nachrichten überholen. | [en](web/hase-und-igel-en.zip) · [de](web/hase-und-igel.zip) |
+| 7 | **henne-und-ei** | *Was war zuerst, der Dienst oder sein Konto?* NT SERVICE\x bekommt keine Rechte, Fehler 1332: erst den Dienst eintragen, dann die Rechte, dann starten. | [en](https://dontpanic.special.at/henne-und-ei-en.zip) · [de](https://dontpanic.special.at/henne-und-ei.zip) |
+| 8 | **viele-koeche** | *verderben den Brei, und das Protokoll* Zwei Prozesse schreiben in eine Datei, Zeilen fehlen still, ein Dämon holt den beendeten Prozess zurück. | [en](https://dontpanic.special.at/viele-koeche-en.zip) · [de](https://dontpanic.special.at/viele-koeche.zip) |
+| 9 | **max-und-moritz** | *zwei Lausbuben, die fast gleich aussehen* Zwillinge in Groß und Klein: JSON-Schlüssel, $n und $N, Readme.md und README.md, D: und d:. | [en](https://dontpanic.special.at/max-und-moritz-en.zip) · [de](https://dontpanic.special.at/max-und-moritz.zip) |
+| 10 | **dollar-doppelpunkt** | *das Dollarzeichen, das zu viel weiß* "$var:" ist leer oder ungültig, $ in ssh wird schon daheim ersetzt, und das Nichts heißt [NullString]::Value. | [en](https://dontpanic.special.at/dollar-doppelpunkt-en.zip) · [de](https://dontpanic.special.at/dollar-doppelpunkt.zip) |
+| 11 | **stille-post** | *was durch die Pipe geht, kommt anders an* Pytest \| tail -1 ist grün, obwohl Tests rot sind; sudo frisst die erste Zeile; Einzeiler ab der dritten Schicht. | [en](https://dontpanic.special.at/stille-post-en.zip) · [de](https://dontpanic.special.at/stille-post.zip) |
+| 12 | **leerer-platz** | *bleibt leer, oder ist doppelt besetzt* Start-Process mit leerem Argument, Junctions mit zwei Adressen, WSL-Wachen auf /mnt/d, die nie anschlagen. | [en](https://dontpanic.special.at/leerer-platz-en.zip) · [de](https://dontpanic.special.at/leerer-platz.zip) |
+| 13 | **hase-und-igel** | *„Ick bün all hier!“* Gespräche, in denen sich die Nachrichten überholen. | [en](https://dontpanic.special.at/hase-und-igel-en.zip) · [de](https://dontpanic.special.at/hase-und-igel.zip) |
 
 ## Einbauen
 
@@ -34,12 +46,14 @@ Einen Ordner aus `skills/de/<name>/` (Deutsch) oder `skills/en/<name>/` (Englisc
 ## Das Haus
 
 <p align="center">
-<a href="https://github.com/andreas-steidl/cabaret-zwischenraum-stage"><img src="web/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" width="56"></a>
-<a href="https://github.com/andreas-steidl/cabaret-01-skill-suite-of-horrors"><img src="web/signets/signet-horrors-rund.svg" alt="N° 1 Die Skill-Suite des Grauens" width="56"></a>
-<img src="web/signets/signet-dontpanic-rund.svg" alt="N° 2 Die Skillsuite für panische Modelle" width="64">
-<a href="https://github.com/andreas-steidl/cabaret-03-lost-in-translation"><img src="web/signets/signet-lostintranslation-rund.svg" alt="N° 3 Übersetzungen und andere Katastrophen" width="56"></a>
-<a href="https://github.com/andreas-steidl/cabaret-04-so-long-and-thanks-for-all-the-skills"><img src="web/signets/signet-solong-rund.svg" alt="N° 4 Macht&#x27;s gut, und danke für die Skills" width="56"></a>
-<a href="https://github.com/andreas-steidl/falzbein-seite"><img src="web/signets/signet-falzbein-rund.svg" alt="Falzbein" width="56"></a>
+<a href="https://github.com/andreas-steidl/cabaret-zwischenraum-stage"><img src=".github/readme/signets/signet-zwischenraum-rund.svg" alt="Kleinkunstbühne Zwischenraum" width="56"></a>
+<a href="https://github.com/andreas-steidl/cabaret-01-skill-suite-of-horrors"><img src=".github/readme/signets/signet-horrors-rund.svg" alt="Erstes Programm: Die Skill-Suite des Grauens" width="56"></a>
+<img src=".github/readme/signets/signet-dontpanic-rund.svg" alt="Zweites Programm: Die Skillsuite für panische Modelle" width="64">
+<a href="https://github.com/andreas-steidl/cabaret-03-lost-in-translation"><img src=".github/readme/signets/signet-lostintranslation-rund.svg" alt="Drittes Programm: Übersetzungen und andere Katastrophen" width="56"></a>
+<a href="https://github.com/andreas-steidl/cabaret-04-so-long-and-thanks-for-all-the-skills"><img src=".github/readme/signets/signet-solong-rund.svg" alt="Viertes Programm: Macht&#x27;s gut, und danke für die Skills" width="56"></a>
+<a href="https://github.com/andreas-steidl/cabaret-whoami-register"><img src=".github/readme/signets/signet-whoami-rund.svg" alt="Register der Language Models" width="56"></a>
+<a href="https://github.com/andreas-steidl/cabaret-kundschaft"><img src=".github/readme/signets/signet-kundschaft-rund.svg" alt="Die Kundschaft" width="56"></a>
+<a href="https://falzbein.special.at/"><img src=".github/readme/signets/signet-falzbein-rund.svg" alt="Falzbein" width="56"></a>
 </p>
 
 ## Lizenz
